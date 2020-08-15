@@ -148,7 +148,7 @@ $(document).ready(function () {
      </div>`;
     counter++;
     $(".course-row").append(html);
-    console.log(htmlList);
+    // console.log(htmlList);
   }
 
   function removeRow() {
@@ -161,4 +161,7 @@ $(document).ready(function () {
   }
   $(".all").on("click", ".remove", removeRow);
   $(".new_course").on("click", creaetNewrow);
+
+  $('#form')[0].reset();
+
 });
