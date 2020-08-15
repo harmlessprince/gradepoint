@@ -98,6 +98,7 @@ $(document).ready(function () {
     var today = new Date();
     // const starttime =
     //  today.getSeconds();
+    $('.totalunit').html(getSumOfUnits());
     $(".gpa").html(calculateCGPA());
     // const Finaltime =
     //   today.getSeconds();
@@ -146,7 +147,7 @@ $(document).ready(function () {
      </div>
      </div>`;
     counter++;
-    $(".form-row").append(html);
+    $(".course-row").append(html);
     console.log(htmlList);
   }
 

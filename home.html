@@ -18,24 +18,35 @@
 </head>
 
 <body>
-    <div class="container mt-5">
-        <div class="row mt-5">
-            <div class="col-md-8 mt-5">
+    <div class="container mt-1">
+        <div class="row ">
+            <div class="col-md-8 mx-auto">
                 <div class="card ">
                     <div class="row">
                         <div class="col-md-4">
                             <img class="card-img-top" src="logo.jpeg" alt="">
                         </div>
+                        <div class="col-md-8">
+                            <span class="mr-5">Total Units:<span class=" gpas totalunit ">0</span> </span>
+                            <span> GPA:<span class="gpas gpa">0.00</span></span>
+                        </div>
                     </div>
                     <div class="card-body all p-3">
-                        <h4 class="card-title">Grade Point Calculator</h4>
-                        <div class="form-row">
+                        <div class="add-row form-row">
+                            <div class="form-group col-md-12">
+                                <h4 class="card-title" style="display: inline;">Grade Point Calculator</h4>
+                                <button type="button" class="new_course btn btn-md">Add New Course</button>
+                            </div>
+
+                        </div>
+
+                        <div class="form-row course-row">
                             <div class="form-group col-md-5">
                                 <label for="title">Course Title</label>
                                 <input type="text" class="form-control" id="title" placeholder="Title">
                             </div>
                             <div class="form-group col-md-4">
-                                <label for="unit">Unit (0-4)</label>
+                                <label for="unit">Unit</label>
                                 <input type="number" class="form-control unit" id="unit" placeholder="Unit" min="0">
                             </div>
                             <div class="form-group col-md-3">
@@ -43,14 +54,14 @@
                                 <input type="number" class="form-control score" id="score" placeholder="Score" min="0">
                             </div>
 
-                            <div class="form-group col-md-5">
+                            <div class="form-group col-md-5  col-sm-5">
                                 <input type="text" class="form-control title" id="title" placeholder="Title">
                             </div>
-                            <div class="form-group col-md-4">
+                            <div class="form-group col-md-4 col-sm-4">
 
                                 <input type="number" class="form-control unit" id="unit" placeholder="Unit" min="0">
                             </div>
-                            <div class="form-group col-md-3">
+                            <div class="form-group col-md-3 col-sm-3">
                                 <input type="number" class="form-control score" id="score" placeholder="Score" min="0">
                             </div>
 
@@ -62,7 +73,7 @@
                                 <input type="number" class="form-control unit" id="unit" placeholder="Unit" min="0">
                             </div>
                             <div class="form-group col-md-3">
-                                <input type="number" class="form-control score" id="score" placeholder="Score" min="0"> 
+                                <input type="number" class="form-control score" id="score" placeholder="Score" min="0">
                             </div>
                             <div class="form-group col-md-5">
                                 <input type="text" class="form-control title" id="title" placeholder="Title">
@@ -75,13 +86,9 @@
                                 <input type="number" class="form-control score" id="score" placeholder="Score" min="0">
                             </div>
 
-                            
                         </div>
 
-                        <div class="add-row text-center">
-                           
-                            <button type="button" class="new_course btn btn-md">Insert New Course</button>
-                        </div>
+
                         <div class="text-center mt-5">
                             <button type="submit" class="btn btn-success mr-5 btn-gpa">Calculate GPA</button>
                             <button type="submit" class="btn btn-danger">Clear Inputs</button>
@@ -90,26 +97,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4  mt-5 gradeview">
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <div class=" ">
-                            <div class=" ">
-                                Total Units:<span class=" gpas totalunit">4.89</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <div class=" ">
-                            <div class="">
-                                GPA:<span class="gpas gpa">4.89</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
     <!-- Optional JavaScript -->
